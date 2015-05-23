@@ -1,0 +1,274 @@
+<h2>
+  Profile Images
+</h2>
+<p>
+  Please use the suitable image size for different entities.
+</p>
+<hr/>
+<h3>
+  User profile (with images)
+</h3>
+<div class="row">
+  <table class="color-table image-table">
+    <tr>
+      <td>
+        <%= image_tag "doge.png", :alt => 'User Image', :class => 'profile-image size134 small-size134' %>
+      </td>
+      <td>
+        <p class="no-margin">
+          Personal profile image
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <%= image_tag "doge.png", :alt => 'User Image', :class => 'profile-image size60 small-size60' %>
+      </td>
+      <td>
+        <p class="no-margin">
+          Feed post, Group Post
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <%= image_tag "doge.png", :alt => 'User Image', :class => 'profile-image size45 small-size45' %>
+      </td>
+      <td>
+        <p class="no-margin">
+          Comment, Group comment, list
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <%= image_tag "doge.png", :alt => 'User Image', :class => 'profile-image size40 small-size40' %>
+      </td>
+      <td>
+        <p class="no-margin">
+          Header Nav
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <%= image_tag "doge.png", :alt => 'User Image', :class => 'profile-image size30 small-size30' %>
+      </td>
+      <td>
+        <p class="no-margin">
+          Feed event notification
+        </p>
+      </td>
+    </tr>
+  </table>
+</div>
+<hr class="invisible"/>
+<div class="large-12 columns no-padding hide-for-small-only">
+  <pre>
+    <code data-language="html">
+      <%= preserve do %>
+        <escaped>
+
+          <img src="/assests/doge.png" alt="User Image" class="profile-image size134" />
+          <img src="/assests/doge.png" alt="User Image" class="profile-image size60" />
+          <img src="/assests/doge.png" alt="User Image" class="profile-image size45" />
+          <img src="/assests/doge.png" alt="User Image" class="profile-image size40" />
+          <img src="/assests/doge.png" alt="User Image" class="profile-image size30" />
+
+
+        </escaped>
+      <% end %>
+    </code>
+  </pre>
+</div>
+<hr class="invisible"/>
+<h3>
+  User profile (without images)
+</h3>
+<div class="row">
+  <table class="color-table image-table">
+    <tr>
+      <td>
+        <%= image_tag "doge.png", :alt => 'User Image', :class => 'profile-image size134 small-size134' %>
+      </td>
+      <td>
+        <p class="no-margin">
+          Personal profile image
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div class="image-initials size60 small-size60">
+          AB
+        </div>
+      </td>
+      <td>
+        <p class="no-margin">
+          Feed post, Group Post
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div class="image-initials size45 small-size45">
+          AB
+        </div>
+      </td>
+      <td>
+        <p class="no-margin">
+          Comment, Group comment, List
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div class="image-initials size40 small-size40">
+          AB
+        </div>
+      </td>
+      <td>
+        <p class="no-margin">
+          Header Nav
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div class="image-initials size30 small-size30">
+          AB
+        </div>
+      </td>
+      <td>
+        <p class="no-margin">
+          Feed event notification
+        </p>
+      </td>
+    </tr>
+  </table>
+</div>
+<hr class="invisible"/>
+<h3>
+  User profile with dashed line style
+</h3>
+<div class="row">
+  <div class="dashed-style profile-image size45">
+    <i class="icon-torso"></i>
+  </div>
+</div>
+<hr class="invisible"/>
+<h3>
+  User upload picture style
+</h3>
+<div class="row">
+  <div class="image-upload">
+    <i class="icon-camera"></i>
+    <div class="dashed-style profile-image size45">
+      <i class="icon-torso"></i>
+    </div>
+  </div>
+</div>
+<div class="large-12 columns no-padding image-initials-group"></div>
+<hr class="invisible"/>
+<div class="large-12 columns no-padding hide-for-small-only">
+  <pre>
+    <code data-language="html">
+      <%= preserve do %>
+        <escaped>
+
+          <div class="image-initials" />
+            AB
+          </div>
+          <div class="image-initials size45 small-size45" />
+            AB
+          </div>
+          <div class="image-initials size40 small-size40" />
+            AB
+          </div>
+          <div class="image-initials size30 small-size30" />
+            AB
+          </div>
+
+
+        </escaped>
+      <% end %>
+    </code>
+  </pre>
+</div>
+<hr/>
+<h3>
+  Business Profile
+</h3>
+<div class="row">
+  <table class="color-table image-table">
+    <tr>
+      <td>
+        <%= image_tag "bus-profile-img-l.png", :alt => 'User Image', :class => 'business-image size134 small-size134' %>
+      </td>
+      <td>
+        <p class="no-margin">
+          Business profile page
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <%= image_tag "bus-profile-img-l.png", :alt => 'User Image', :class => 'business-image size60 small-size60' %>
+      </td>
+      <td>
+        <p class="no-margin">
+          Personal profile page - Work section
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <%= image_tag "bus-profile-img-l.png", :alt => 'User Image', :class => 'business-image size45 small-size45' %>
+      </td>
+      <td>
+        <p class="no-margin">
+          List
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <%= image_tag "bus-profile-img-l.png", :alt => 'User Image', :class => 'business-image size40 small-size40' %>
+      </td>
+      <td>
+        <p class="no-margin">
+          Header Nav
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <%= image_tag "bus-profile-img-l.png", :alt => 'User Image', :class => 'business-image size30 small-size30' %>
+      </td>
+      <td>
+        <p class="no-margin">
+          Feed event notification
+        </p>
+      </td>
+    </tr>
+  </table>
+</div>
+<hr class="invisible"/>
+<div class="large-12 columns no-padding hide-for-small-only">
+  <pre>
+    <code data-language="html">
+      <%= preserve do %>
+        <escaped>
+
+          <img src="/assests/bus-profile-img-l.png" alt="User Image" class="business-image size134 small-size134" />
+          <img src="/assests/bus-profile-img-l.png" alt="User Image" class="business-image size60 small-size60" />
+          <img src="/assests/bus-profile-img-l.png" alt="User Image" class="business-image size45 small-size45" />
+          <img src="/assests/bus-profile-img-l.png" alt="User Image" class="business-image size40 small-size40" />
+          <img src="/assests/bus-profile-img-l.png" alt="User Image" class="business-image size30 small-size30" />
+
+
+        </escaped>
+      <% end %>
+    </code>
+  </pre>
+</div>

@@ -1,0 +1,558 @@
+<h2>
+  Forms
+</h2>
+<p>
+  Group form elements by similiarity.
+</p>
+<hr/>
+<div class="large-12 column no-padding form-group">
+  <h3>
+    Text inputs
+  </h3>
+  <div class="large-8 column no-padding">
+    <div class="large-12 column no-padding">
+      <div class="small-6 column no-padding">
+        <label for="first-name">
+          First name
+        </label>
+        <input class="adjacent-right" id="first-name" placeholder="John" type="text"></input>
+      </div>
+      <div class="small-6 column no-padding">
+        <label for="last-name">
+          Last name
+        </label>
+        <input class="adjacent-left" id="last-name" placeholder="Smith" type="text"></input>
+      </div>
+    </div>
+    <div class="large-12 column no-padding">
+      <div class="small-8 column no-padding">
+        <label for="address">
+          Address
+        </label>
+        <input class="adjacent-right" id="address" type="text"></input>
+      </div>
+      <div class="small-4 column no-padding">
+        <label for="address">
+          &nbsp;
+        </label>
+        <input class="adjacent-left" placeholder="Apt" type="text"></input>
+      </div>
+    </div>
+    <div class="large-12 column no-padding">
+      <label for="email">
+        Email
+      </label>
+      <input class="with-meta" id="email" placeholder="name@example.com" type="text"></input>
+      <span class="meta-description">
+        We will send your invite to this address
+      </span>
+    </div>
+  </div>
+</div>
+<div class="large-12 column no-padding hide-for-small-only">
+  <pre>
+    <code data-language="html">
+      <%= preserve do %>
+        <escaped>
+
+          <div class="large-12 column form-group">
+            <div class="large-8 column no-padding">
+              <div class="large-12 column no-padding">
+                <div class="large-6 column no-padding">
+                  <label for="first-name">
+                    First name
+                  </label>
+                  <input class="adjacent-right" id="first-name" placeholder="John" type="text">
+                </div>
+                <div class="large-6 column no-padding">
+                  <label for="last-name">
+                    Last name
+                  </label>
+                  <input class="adjacent-left" id="last-name" placeholder="Smith" type="text">
+                </div>
+              </div>
+              <div class="large-12 column no-padding">
+                <label for="email">
+                  Email
+                </label>
+                <input class="with-meta" id="email" placeholder="name@example.com" type="text">
+                <span class="meta-description">
+                  We will send your invite to this address
+                </span>
+              </div>
+            </div>
+            <div class="large-4 column"></div>
+          </div>
+
+
+        </escaped>
+      <% end %>
+    </code>
+  </pre>
+</div>
+<hr/>
+<div class="large-12 column no-padding no-padding form-group">
+  <h3>
+    Error messages
+  </h3>
+  <div class="large-8 column no-padding">
+    <div class="large-12 column no-padding">
+      <p>
+        *Required
+      </p>
+    </div>
+    <div class="large-12 column no-padding">
+      <div class="small-6 column no-padding">
+        <div class="form-box has-error">
+          <label for="first-name">
+            First name*
+          </label>
+          <input class="adjacent-right" id="first-name" placeholder="John" type="text"></input>
+          <div class="balloon error-balloon left-aligned">
+            <span class="balloon-message">
+              First name is required
+            </span>
+            <span class="balloon-arrow"></span>
+          </div>
+        </div>
+      </div>
+      <div class="small-6 column no-padding">
+        <div class="form-box has-error">
+          <label for="last-name">
+            Last name*
+          </label>
+          <input class="adjacent-left" id="last-name" placeholder="Smith" type="text"></input>
+          <div class="balloon error-balloon right-aligned">
+            <span class="balloon-message">
+              Last name is required
+            </span>
+            <span class="balloon-arrow"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="large-12 column no-padding">
+      <div class="form-box has-error">
+        <label for="email">
+          Email*
+        </label>
+        <input class="with-meta" id="email" placeholder="name@example.com" type="text"></input>
+        <span class="meta-description">
+          We will send your invite to this address
+        </span>
+        <div class="balloon error-balloon right-aligned">
+          <span class="balloon-message">
+            Email is required
+          </span>
+          <span class="balloon-arrow"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="large-12 column no-padding form-group">
+  <h3>
+    Hint messages
+  </h3>
+  <div class="large-8 column no-padding">
+    <div class="large-12 column no-padding">
+      <div class="large-6 column no-padding">
+        <div class="form-box">
+          <label for="first-name">
+            First name
+          </label>
+          <input class="adjacent-right" id="first-name" placeholder="John" type="text"></input>
+          <div class="balloon hint-balloon left-aligned">
+            <span class="balloon-message">
+              First name is required
+            </span>
+            <span class="balloon-arrow"></span>
+          </div>
+        </div>
+      </div>
+      <div class="large-12 column no-padding">
+        <div class="form-box">
+          <label for="email">
+            Email
+          </label>
+          <input class="with-meta" id="email" placeholder="name@example.com" type="text"></input>
+          <span class="meta-description">
+            We will send your invite to this address
+          </span>
+          <div class="balloon hint-balloon right-aligned">
+            <span class="balloon-message">
+              Email is required
+            </span>
+            <span class="balloon-arrow"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<hr/>
+<div class="large-12 column no-padding radio-container">
+  <h3>
+    Radio buttons
+  </h3>
+  <div class="large-8 column no-padding">
+    <div class="form-box">
+      <label for="gender">
+        Gender
+      </label>
+      <div class="radio-wrap">
+        <div class="radio-button">
+          <input id="male" name="gender" type="radio" value="male"></input>
+          <label for="male"></label>
+        </div>
+        <label class="radio-label" for="male">
+          Male
+        </label>
+      </div>
+      <div class="radio-wrap">
+        <div class="radio-button">
+          <input id="female" name="gender" type="radio" value="female"></input>
+          <label for="female"></label>
+        </div>
+        <label class="radio-label" for="female">
+          Female
+        </label>
+      </div>
+      <div class="radio-wrap">
+        <div class="radio-button">
+          <input id="other" name="gender" type="radio" value="other"></input>
+          <label for="other"></label>
+        </div>
+        <label class="radio-label" for="other">
+          Other
+        </label>
+      </div>
+    </div>
+    <div class="form-box has-error">
+      <label for="gender_error">
+        Gender*
+      </label>
+      <div class="radio-wrap">
+        <div class="radio-button">
+          <input id="male-error" name="gender_error" type="radio" value="male"></input>
+          <label for="male-error"></label>
+        </div>
+        <label class="radio-label" for="male-error">
+          Male
+        </label>
+      </div>
+      <div class="radio-wrap">
+        <div class="radio-button">
+          <input id="female-error" name="gender_error" type="radio" value="female"></input>
+          <label for="female-error"></label>
+        </div>
+        <label class="radio-label" for="female-error">
+          Female
+        </label>
+      </div>
+      <div class="radio-wrap">
+        <div class="radio-button">
+          <input id="other-error" name="gender_error" type="radio" value="other"></input>
+          <label for="other-error"></label>
+        </div>
+        <label class="radio-label" for="other-error">
+          Other
+        </label>
+      </div>
+      <div class="balloon error-balloon right-aligned">
+        <span class="balloon-message">
+          Please select one
+        </span>
+        <div class="balloon-arrow"></div>
+      </div>
+    </div>
+  </div>
+  <div class="large-4 column no-padding"></div>
+</div>
+<div class="large-12 no-padding column hide-for-small-only">
+  <pre>
+    <code data-language="html">
+      <%= preserve do %>
+        <escaped>
+
+          <div class="large-12 column radio-container">
+            <h3>
+              Radio buttons
+            </h3>
+            <label for="gender">
+              Gender
+            </label>
+            <div class="radio-wrap">
+              <div class="radio-button">
+                <input id="male" name="gender" type="radio" value="male">
+                <label for="male"></label>
+              </div>
+              <label class="radio-label" for="male">
+                Male
+              </label>
+            </div>
+            <div class="radio-wrap">
+              <div class="radio-button">
+                <input id="female" name="gender" type="radio" value="female">
+                <label for="female"></label>
+              </div>
+              <label class="radio-label" for="female">
+                Female
+              </label>
+            </div>
+            <div class="radio-wrap">
+              <div class="radio-button">
+                <input id="other" name="gender" type="radio" value="other">
+                <label for="other"></label>
+              </div>
+              <label class="radio-label" for="other">
+                Other
+              </label>
+            </div>
+          </div>
+
+
+        </escaped>
+      <% end %>
+    </code>
+  </pre>
+</div>
+<hr/>
+<div class="large-12 column no-padding">
+  <h3>
+    Select box
+  </h3>
+  <div class="large-8 column no-padding">
+    <div class="large-12 column no-padding">
+      <div class="form-box">
+        <label for="type-of-business">
+          Business type
+        </label>
+        <select id="type-of-business">
+          <option value="tech">
+            Tech
+          </option>
+          <option value="restaurant">
+            Restaurant
+          </option>
+          <option value="auto_shop">
+            Auto shop
+          </option>
+        </select>
+      </div>
+      <div class="form-box has-error">
+        <label for="type-of-business">
+          Business type*
+        </label>
+        <select id="type-of-business">
+          <option value="tech">
+            Tech
+          </option>
+          <option value="restaurant">
+            Restaurant
+          </option>
+          <option value="auto_shop">
+            Auto shop
+          </option>
+        </select>
+        <div class="balloon error-balloon right-aligned">
+          <span class="balloon-message">
+            Please select one
+          </span>
+          <div class="balloon-arrow"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="large-4 column no-padding"></div>
+</div>
+<div class="large-12 column no-padding hide-for-small-only">
+  <pre>
+    <code data-language="html">
+      <%= preserve do %>
+        <escaped>
+
+          <div class="large-12 column">
+            <div class="large-8 column no-padding">
+              <div class="large-12 column no-padding">
+                <label for="type-of-business">
+                  Business type
+                </label>
+                <select id="type-of-business">
+                  <option value="tech">
+                    Tech
+                  </option>
+                  <option value="restaurant">
+                    Restaurant
+                  </option>
+                  <option value="auto_shop">
+                    Auto shop
+                  </option>
+                </select>
+              </div>
+            </div>
+            <div class="large-4 column"></div>
+          </div>
+
+
+        </escaped>
+      <% end %>
+    </code>
+  </pre>
+</div>
+<hr/>
+<div class="large-12 column no-padding">
+  <h3>
+    Checkboxes
+  </h3>
+  <div class="large-8 column no-padding form-group">
+    <div class="row">
+      <label for="checkbox-option-1">
+        Check all that apply
+      </label>
+      <div class="large-12 column no-padding">
+        <div class="checkbox-wrap">
+          <div class="checkbox">
+            <input id="checkbox-option-1" type="checkbox"></input>
+            <label for="checkbox-option-1" type="checkbox"></label>
+          </div>
+        </div>
+        <label class="checkbox-main-label" for="checkbox-option-1">
+          Check this
+        </label>
+      </div>
+      <div class="large-12 column no-padding">
+        <div class="checkbox-wrap">
+          <div class="checkbox">
+            <input id="checkbox-option-2" type="checkbox"></input>
+            <label for="checkbox-option-2" type="checkbox"></label>
+          </div>
+        </div>
+        <label class="checkbox-main-label" for="checkbox-option-2">
+          And maybe this
+        </label>
+      </div>
+      <div class="large-12 column no-padding">
+        <div class="checkbox-wrap">
+          <div class="checkbox">
+            <input id="checkbox-option-3" type="checkbox"></input>
+            <label for="checkbox-option-3" type="checkbox"></label>
+          </div>
+        </div>
+        <label class="checkbox-main-label" for="checkbox-option-3">
+          And this too
+        </label>
+      </div>
+    </div>
+    <div class="row">
+      <label>
+        Check green checkbox
+      </label>
+      <div class="large-12 column no-padding">
+        <div class="checkbox-wrap">
+          <div class="checkbox green">
+            <input id="checkbox-option-green" type="checkbox"></input>
+            <label for="checkbox-option-green" type="checkbox"></label>
+          </div>
+        </div>
+        <label class="checkbox-main-label" for="checkbox-option-green">
+          green check box
+        </label>
+      </div>
+      <div class="large-12 column no-padding">
+        <div class="checkbox-wrap">
+          <div class="checkbox green">
+            <input checked="checked" id="checkbox-option-green-checked" type="checkbox"></input>
+            <label for="checkbox-option-green-checked" type="checkbox"></label>
+          </div>
+        </div>
+        <label class="checkbox-main-label" for="checkbox-option-green-checked">
+          green check box checked
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="large-4 column"></div>
+</div>
+<div class="large-12 column no-padding hide-for-small-only">
+  <pre>
+    <code data-language="ruby">
+      <%= preserve do %>
+        <escaped>
+
+          -# normal checkbox
+          .checkbox-wrap
+            .checkbox
+              %input#checkbox-option-1{ :type => 'checkbox' }
+              %label{ :type => 'checkbox', :for => 'checkbox-option-1' }
+          %label.checkbox-main-label{ :for => 'checkbox-option-1' }
+            Check this
+
+          -# for green checkbox
+          .checkbox-wrap
+            .checkbox.green
+              %input#checkbox-option-green-checked { :type => 'checkbox','checked'=>'checked' }
+              %label { :type => 'checkbox', :for => 'checkbox-option-green-checked' }
+          %label.checkbox-main-label { :for => 'checkbox-option-green-checked' }
+            green check box checked
+
+
+        </escaped>
+      <% end %>
+    </code>
+  </pre>
+</div>
+<hr/>
+<div class="large-12 column no-padding">
+  <h3>
+    Segment Control
+  </h3>
+  <div class="large-8 column no-padding">
+    <label>
+      Role
+    </label>
+    <ul class="segment-control three" ng-init="currentSegment = "segment1"">
+      <li ng-class="{ 'active' : currentSegment == 'segment1'  %>" ng-click="currentSegment = "segment1"">
+        Owner
+      </li>
+      <li ng-class="{ 'active' : currentSegment == 'segment2'  %>" ng-click="currentSegment = "segment2"">
+        Manager
+      </li>
+      <li ng-class="{ 'active' : currentSegment == 'segment3'  %>" ng-click="currentSegment = "segment3"">
+        Employee
+      </li>
+    </ul>
+  </div>
+</div>
+<hr/>
+<div class="large-12 column no-padding">
+  <h3>
+    Post Fix Button
+  </h3>
+  <div class="large-8 column no-padding">
+    <div class="small-9 columns no-padding">
+      <input id="pass" placeholder="Password" type="text"></input>
+    </div>
+    <div class="small-3 columns no-padding">
+      <a class="button postfix" data-status="1" id="sh">
+        hide
+      </a>
+    </div>
+  </div>
+  <script>
+
+    $('#sh').on('click', function(){
+      if($(this).data('status') == 1){
+        $('#sh').html('show');
+        $('#pass').attr('type', 'password');
+        $('#sh').data('status', 0);
+      } else {
+        $('#sh').html('hide');
+        $('#pass').attr('type', 'text');
+        $('#sh').data('status', 1);
+      }
+    });
+
+
+  </script>
+</div>

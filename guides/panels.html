@@ -1,0 +1,237 @@
+<h2>
+  Panels
+</h2>
+<p>
+  Panels are sapearted from each other through the color classes.
+</p>
+<hr/>
+<div class="row">
+  <h3>
+    Light Gray
+  </h3>
+  <div class="large-8 column no-padding">
+    <div class="row panel no-borders">
+      <div class="radio-wrap">
+        <div class="radio-button">
+          <input id="postcard" name="gender" type="radio" value="male"></input>
+          <label for="postcard"></label>
+        </div>
+        <label class="radio-label" for="postcard">
+          By Postcard
+        </label>
+        <div class="radio-sub-description">
+          We will make an invite code to the address on file for Coffee Cafe.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<hr/>
+<div class="row">
+  <h3>
+    Light Gray
+    <small>
+      with Button
+    </small>
+  </h3>
+  <div class="large-8 column no-padding">
+    <div class="row panel no-borders">
+      <div class="large-12 column no-padding">
+        <div class="radio-wrap">
+          <div class="radio-button">
+            <input id="invite" name="gender" type="radio" value="male"></input>
+            <label for="invite"></label>
+          </div>
+          <label class="radio-label" for="invite">
+            Invite Code
+          </label>
+          <input class="radio-input" type="text"></input>
+          <div class="radio-sub-description">
+            If you dont have an invite code
+            <a>
+              contact us
+            </a>
+            we will get you one.
+          </div>
+        </div>
+      </div>
+      <div class="large-12 column no-padding">
+        <button class="cta-button no-margin" style="width: 100%;">
+          Finish Up
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<hr/>
+<div class="row">
+  <h3>
+    Light Green
+    <small>
+      Success
+    </small>
+  </h3>
+  <div class="large-8 column no-padding">
+    <div class="row panel green-panel no-borders">
+      <div class="large-12 column no-padding">
+        <label for="inv">
+          Invite Code
+        </label>
+        <input id="inv" type="text"></input>
+      </div>
+      <div class="large-12 column no-padding">
+        <div class="verified text-center">
+          <h4>
+            <i class="icon-active"></i>
+            VERIFIED!
+          </h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<hr/>
+<div class="row">
+  <h3>
+    Light Blue
+    <small>
+      Education
+    </small>
+  </h3>
+  <div class="large-8 column no-padding">
+    <div class="row panel blue-panel no-borders">
+      <div class="row panel panel-white">
+        <div class="quote-image">
+          <%= image_tag "doge.png", :alt => 'User Image', :class => 'profile-image size40 small-size40' %>
+        </div>
+        <div class="quote"><
+          Much awesomeness, so wow, wuff wuff.
+        </div>
+        <div class="cite">
+          Doge
+          <br/>
+          Awesome land
+        </div>
+      </div>
+      <div class="row panel panel-white">
+        <div class="quote-image">
+          <%= image_tag "doge.png", :alt => 'User Image', :class => 'profile-image size40 small-size40' %>
+        </div>
+        <div class="quote"><
+          Much awesomeness, so wow, wuff wuff.
+        </div>
+        <div class="cite">
+          Doge
+          <br/>
+          Awesome land
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<hr class="invisible"/>
+<div class="row">
+  <h3>
+    Townsquared post style
+  </h3>
+  <div class="large-8">
+    <div class="tsqd-post-header">
+      <span>Post Header</span>
+    </div>
+  </div>
+  <hr/>
+  <div class="large-8">
+    <div class="tsqd-post-header">
+      <span>Post Header</span>
+      <i class="icon-close"></i>
+    </div>
+  </div>
+</div>
+<hr class="invisible"/>
+<div class="large-12 column hide-for-small-only">
+  <pre>
+    <code data-language="html">
+      <%= preserve do %>
+        <escaped>
+
+          .tsqd-post-header
+            %span Post Header
+            %i.icon-close
+
+
+        </escaped>
+      <% end %>
+    </code>
+  </pre>
+</div>
+<hr class="invisible"/>
+<div class="row">
+  <h3>
+    Fine print with light blue background
+  </h3>
+  <div class="large-8">
+    <div class="fine-print">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel dui hendrerit, feugiat turpis eu, venenatis risus. Donec eu elit quam.
+    </div>
+  </div>
+</div>
+<hr class="invisible"/>
+<div class="row">
+  <h3>
+    Fine print with light gold background
+  </h3>
+  <div class="large-8">
+    <div class="fine-print gold">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel dui hendrerit, feugiat turpis eu, venenatis risus. Donec eu elit quam.
+      <a class="gold">
+        click here
+      </a>
+    </div>
+  </div>
+</div>
+<hr class="invisible"/>
+<div class="row">
+  <h3>
+    Feed top Welcome user
+  </h3>
+  <div class="large-8">
+    <div class="welcome-user-panel">
+      <div class="user-title">
+        <span>Welcome, Jane!</span>
+        <i ng-class="{"icon-arrow-down":!showCheckList, "icon-arrow-up":showCheckList}" ng-click="showCheckList=!showCheckList" ng-init="showCheckList=false"></i>
+      </div>
+      <div class="user-checklist" ng-if="showCheckList">
+        <p>Get the most out of Townsquared by finishing these simple steps</p>
+      </div>
+    </div>
+  </div>
+</div>
+<hr class="invisible"/>
+<div class="row">
+  <h3>
+    Feature Tool Tip
+  </h3>
+  <div class="large-8">
+    <a aria-controls="drop1" aria-expanded="false" data-dropdown="drop1">click here</a>
+    <div aria-hidden="true" class="f-dropdown center content feature-tooltip" id="drop1" tabindex="-1">
+      Some text that people will think is awesome! Some text that people will think is awesome! Some text that people will think is awesome!
+    </div>
+  </div>
+</div>
+<hr class="invisible"/>
+<div class="row">
+  <h3>
+    Write new Post
+  </h3>
+</div>
+<div class="large-12 column no-padding write-post-section on-boarding">
+  <div class="user-pic profile-image small-size45">
+    <%= image_tag "doge.png", :alt => 'User Image', :class => 'circle' %>
+  </div>
+  <div class="write-post">
+    <a class="dummy-input">
+      Write a new Post, Group Post, or Urgent Alert here!
+    </a>
+  </div>
+</div>
+<hr class="invisible"/>

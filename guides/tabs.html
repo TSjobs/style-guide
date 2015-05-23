@@ -1,0 +1,59 @@
+<h2>
+  Tabs
+</h2>
+<div class="large-12 column" ng-init="currentTab = "tab1"">
+  <ul class="tabs blue three">
+    <li class="tab-title" ng-class="{ 'active' : currentTab == 'tab1'  %>" ng-click="currentTab = "tab1"">
+      <a>
+        Tab 1
+      </a>
+    </li>
+    <li class="tab-title" ng-class="{ 'active' : currentTab == 'tab2'  %>" ng-click="currentTab = "tab2"">
+      <a>
+        Tab 2
+        <span>
+          3
+        </span>
+      </a>
+    </li>
+    <li class="tab-title" ng-class="{ 'active' : currentTab == 'tab3'  %>" ng-click="currentTab = "tab3"">
+      <a>
+        Tab 3
+      </a>
+    </li>
+  </ul>
+  <div class="tab-view"></div>
+</div>
+<div class="large-12 column">
+  <pre>
+    <code data-language="html">
+      <%= preserve do %>
+        <escaped>
+
+          <ul class="tabs blue three">
+            <li class="tab-title" ng-class="{ 'active' : currentTab == 'tab1'  %>" ng-click="currentTab = "tab1"">
+              <a>
+                Tab 1
+              </a>
+            </li>
+            <li class="tab-title" ng-class="{ 'active' : currentTab == 'tab2'  %>" ng-click="currentTab = "tab2"">
+              <a>
+                Tab 2
+                <span>
+                  3
+                </span>
+              </a>
+            </li>
+            <li class="tab-title" ng-class="{ 'active' : currentTab == 'tab3'  %>" ng-click="currentTab = "tab3"">
+              <a>
+                Tab 3
+              </a>
+            </li>
+          </ul>
+
+
+        </escaped>
+      <% end %>
+    </code>
+  </pre>
+</div>

@@ -1,0 +1,16 @@
+<html ng-app>
+<head>
+  <title>Townsquared - Style Guide</title>
+  <script src="bower_components/angular/angular.min.js"></script>
+</head>
+<body ng-init="guides=['overview','layouts','buttons','mobile','modals','navigation','tags','tabs','typography','panels','lists','forms','icons','images','colors','']">
+  <h2>
+    HTML/CSS Style Guide
+  </h2>
+  <p>
+    This document outlines our design best practices for our website UI.  Use this as a reference when implementing new html.
+  </p>
+  <hr/>
+  <ng-include ng-repeat="guide in guides" src=" 'guides/' + guide + '.html' "></ng-include>
+</body>
+</html>

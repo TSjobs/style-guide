@@ -1,0 +1,107 @@
+<h2>
+  Reveal Modal
+</h2>
+<div class="large-6 columns">
+  <a class="button" data-reveal-id="myModal">
+    Click to Open Modal
+  </a>
+  <a class="button" data-reveal-id="confirmationModal">
+    Confirmation Modal
+  </a>
+</div>
+<div class="reveal-modal small" id="myModal">
+  <div class="row top-heading">
+    <i class="icon-message"></i>
+    <h6 class="no-margin">
+      Write a message to Someone
+    </h6>
+  </div>
+  <hr/>
+  <div class="row">
+    <h2>
+      Awesome. I have it.
+    </h2>
+    <p class="lead">
+      Your couch. It is mine.
+    </p>
+    <p class="no-margin">
+      I'm a cool paragraph that lives inside of an even cooler modal. Wins!
+    </p>
+  </div>
+  <hr/>
+  <div class="large-12 columns no-padding">
+    <div class="action-buttons">
+      <div class="action1">
+        <a class="secondary" onclick="$('#myModal').foundation('reveal', 'close');">
+          Cancel
+        </a>
+      </div>
+      <div class="action2">
+        <button class="no-margin" onclick="$('#myModal').foundation('reveal', 'close');">
+          OK
+        </button>
+      </div>
+    </div>
+  </div>
+  <a class="close-reveal-modal">
+    <i class="icon-close"></i>
+  </a>
+</div>
+<div class="reveal-modal tiny confirmation" id="confirmationModal">
+  <div class="icon-message"></div>
+  <p class="first-line">
+    Your message has been sent.
+  </p>
+  <p class="p2 second-line">
+    We will be contacting you shorly.
+  </p>
+  <div class="button" onclick="$('#confirmationModal').foundation('reveal', 'close');">
+    Ok
+  </div>
+</div>
+<div class="large-12 columns">
+  <pre>
+    <code data-language="html">
+      <%= preserve do %>
+        <escaped>
+
+          <a href="#" data-reveal-id="myModal">Click Me For A Modal</a>
+
+          <div id="myModal" class="reveal-modal" data-reveal>
+            <div class="row top-heading">
+              <i class="icon-message"></i>
+              <h6 class="no-margin">
+                Write a message to Someone
+              </h6>
+            </div>
+            <hr />
+            <div class="row">
+              <h2>Awesome. I have it.</h2>
+              <p class="lead">Your couch.  It is mine.</p>
+              <p class="no-margin">I'm a cool paragraph that lives inside of an even cooler modal. Wins!</p>
+            </div>
+            <hr />
+            <div class="large-12 columns no-padding">
+              <div class="action-buttons">
+                <div class="action1">
+                  <a class="secondary">
+                    Cancel
+                  </a>
+                </div>
+                <div class="action2">
+                  <button class="no-margin">
+                    OK
+                  </button>
+                </div>
+            </div>
+            <a class="close-reveal-modal">
+              <i class="icon-close"></i>
+            </a>
+          </div>
+
+
+        </escaped>
+      <% end %>
+    </code>
+  </pre>
+</div>
