@@ -1,22 +1,21 @@
-- content_for :content do
-  %h2
-    Layouts
-  .large-12.column
-    %p
-      = link_to 'Internal main', :admin_style_guide_internal_main_layout
-  .large-12.column
-    %pre
-      %code{ 'data-language' => 'ruby' }
-        = preserve do
-          :escaped
-            render layout: :sublayout_internal_main
-  %hr.invisible
-  .large-12.column
-    %p
-      = link_to 'Basic', :admin_style_guide_basic_layout
-  .large-12.column
-    %pre
-      %code{ 'data-language' => 'ruby' }
-        = preserve do
-          :escaped
-            render layout: :sublayout_basic
+%h2
+  Layouts
+.large-12.column
+  %p
+    = link_to 'Internal main', :admin_style_guide_internal_main_layout
+.large-12.column
+  %pre
+    %code{ 'data-language' => 'ruby' }
+      = preserve do
+        :escaped
+          render layout: :sublayout_internal_main
+%hr.invisible
+.large-12.column
+  %p
+    = link_to 'Basic', :admin_style_guide_basic_layout
+.large-12.column
+  %pre
+    %code{ 'data-language' => 'ruby' }
+      = preserve do
+        :escaped
+          render layout: :sublayout_basic
