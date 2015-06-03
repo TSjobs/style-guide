@@ -6,7 +6,7 @@ var paths = {
     src: ['scss/townsquared.scss'],
     dest: 'css/',
     watch: ['scss/**/*.scss'],
-    includes: ['scss', 'bower_components']
+    includes: ['scss', 'node_modules']
   },
   server: {
     src: './'
