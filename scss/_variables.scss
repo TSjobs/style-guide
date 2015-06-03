@@ -1,0 +1,120 @@
+// Dimensions
+$fixed-width: 960px;
+$external-width: 800px;
+$top-nav-height: 60px;
+$fixed-mobile-padding: 10px;
+
+//Media quries for mobile + tablet screen
+$large-mobile-only: "#{$screen} and (max-width: 959px)";
+$large-mobile-up: "#{$screen} and (min-width: 960px)";
+
+$between-custom-mobile: "(min-width: 768px) and (max-width: 959px)";
+
+$small-mobile-only: "#{$screen} and (max-width: 767px)";
+$small-mobile-up: "#{$screen} and (min-width: 768px)";
+
+// Colors
+$townsquared-blue: #4a87c8;
+$townsquared-blue-g: #2363a3;
+
+$townsquared-gray: #fafafa;
+$townsquared-gray-b: #eee;
+
+$townsquared-green: #00a59f;
+
+// New colors
+$tsqd-blue: #4a86c5;
+$tsqd-blue-hover: #6f9ed1;
+
+$tsqd-green: #c3d500;
+$tsqd-green-80: #cfdf4a;
+
+$tsqd-gold: #FFB718;
+$tsqd-gold-20: #FFF0D5;
+$tsqd-gold-80: #FEC652;
+$tsqd-light-blue: #8CB7e8;
+$tsqd-city-blue: #9cb6d2;
+$tsqd-urgent-orange: #ff6a00;
+$tsqd-red: #ff4237;
+$tqsd-baloon-error-orange : #ffcd69;
+
+$tsqd-blue-110: #2c75c1;
+$tsqd-blue-80: #6f9ed1;
+$tsqd-blue-50: #92b5dc;
+$tsqd-blue-10: #ecf2f8;
+
+//Gray Shades
+$tsqd-gray-01: #242424;
+$tsqd-gray-02: #424242;
+$tsqd-gray-03: #686868;
+$tsqd-gray-04: #959595;
+$tsqd-gray-05: #bcbcbc;
+$tsqd-gray-06: #c9c9c9;
+$tsqd-gray-07: #d6d6d6;
+$tsqd-gray-08: #e8e8e8;
+$tsqd-gray-09: #f2f2f2;
+$tsqd-gray-10: #fafafa;
+
+//Blue Shades
+$tsqd-blue-01: #4a86c5;
+$tsqd-blue-02: #5d92cb;
+$tsqd-blue-03: #6f9ed1;
+$tsqd-blue-04: #80a9d6;
+$tsqd-blue-05: #92b5dc;
+$tsqd-blue-06: #a4c1e1;
+$tsqd-blue-07: #b6cee7;
+$tsqd-blue-08: #c7daed;
+$tsqd-blue-09: #dbe7f4;
+$tsqd-blue-10: #ecf2f8;
+
+//Green Shades
+$tsqd-green-01: #7fba00;
+$tsqd-green-02: #8cc119;
+$tsqd-green-03: #99c833;
+$tsqd-green-04: #a6cf46;
+$tsqd-green-05: #b3d666;
+$tsqd-green-06: #bfdd7f;
+$tsqd-green-07: #cce499;
+$tsqd-green-08: #d9ebb2;
+$tsqd-green-09: #e6f2cc;
+$tsqd-green-10: #f2f8e5;
+
+//Gold Shades
+$tsqd-gold-01: #ffb819;
+$tsqd-gold-02: #ffbe39;
+$tsqd-gold-03: #fec652;
+$tsqd-gold-04: #ffcd69;
+$tsqd-gold-05: #ffd47f;
+$tsqd-gold-06: #ffdb95;
+$tsqd-gold-07: #ffe3aa;
+$tsqd-gold-08: #ffeabf;
+$tsqd-gold-09: #fff0d5;
+$tsqd-gold-10: #fff8e9;
+
+// Coral shades
+$tsqd-coral-01: #ff4c00;
+$tsqd-coral-02: #ff8671;
+$tsqd-coral-03: #ffc6b1;
+$tsqd-coral-04: #ffe2d7;
+$tsqd-coral-hover: #ff543f;
+
+// Teal shades
+$tsqd-teal-01: #00a0ae;
+$tsqd-teal-02: #00c4b3;
+$tsqd-teal-03: #a2d9d3;
+$tsqd-teal-04: #cfeae6;
+$tsqd-teal-hover: #179A8E;
+
+
+$success: #{$tsqd-green};
+$failure: #{$tsqd-red};
+
+$success-green: $tsqd-green;
+$failure-red: $tsqd-red;
+
+// Typography
+$primary-font: 'Montserrat', sans-serif;
+$secondary-font: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$tertiary-font: 'Architects Daughter', cursive;
+
+$fa-font-path: 'fonts';
