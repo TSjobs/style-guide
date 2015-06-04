@@ -25,4 +25,10 @@ Make sure you have node installed
   1. run `brew install node` in terminal
   2. run `npm install -g gulp bower` in terminal
   3. run `npm install` in terminal
-4. run `gulp server` to start working
+
+### Developing
+
+1. Run `gulp server` from the project folder in terminal to run the server
+2. Review changes to the code in Github App, checking and unchecking files/lines you want to save
+3. Write a note about what you changed in the textarea and hit the `commit` button
+4. Hit the `sync` button in the top-right corner to send your changes to the server
