@@ -1,0 +1,502 @@
+.color-box {
+  padding: 0;
+}
+
+.color-box-swatch {
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+  height: 40px;
+  background: #fafafa;
+
+  &.tsqd-blue {
+    background: $tsqd-blue;
+  }
+
+  &.tsqd-blue-110 {
+    background: $tsqd-blue-110;
+  }
+
+  &.tsqd-green {
+    background: $tsqd-green;
+  }
+
+  &.tsqd-gold {
+    background: $tsqd-gold;
+  }
+
+  &.tsqd-gold-80 {
+    background: $tsqd-gold-80;
+  }
+
+  &.tsqd-light-blue {
+    background: $tsqd-light-blue;
+  }
+
+  &.tsqd-blue-hover {
+    background: $tsqd-blue-hover;
+  }
+
+  &.tsqd-city-blue {
+    background: $tsqd-city-blue;
+  }
+
+  &.tsqd-gold {
+    background: $tsqd-gold;
+  }
+
+  &.tsqd-urgent-orange {
+    background: $tsqd-urgent-orange;
+  }
+
+  &.tsqd-red {
+    background: $tsqd-red;
+  }
+
+  &.success {
+    background: $success;
+  }
+
+  &.failure {
+    background: $failure;
+  }
+
+  &.tsqd-gray-01 {
+    background: $tsqd-gray-01;
+  }
+
+  &.tsqd-gray-02 {
+    background: $tsqd-gray-02;
+  }
+
+  &.tsqd-gray-03 {
+    background: $tsqd-gray-03;
+  }
+
+  &.tsqd-gray-04 {
+    background: $tsqd-gray-04;
+  }
+
+  &.tsqd-gray-05 {
+    background: $tsqd-gray-05;
+  }
+
+  &.tsqd-gray-06 {
+    background: $tsqd-gray-06;
+  }
+
+  &.tsqd-gray-07 {
+    background: $tsqd-gray-07;
+  }
+
+  &.tsqd-gray-08 {
+    background: $tsqd-gray-08;
+  }
+
+  &.tsqd-gray-09 {
+    background: $tsqd-gray-09;
+  }
+
+  &.tsqd-gray-10 {
+    background: $tsqd-gray-10;
+  }
+}
+.color-on-boarding-table{
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  color: rgba(0, 0, 0, 0.75) !important;
+  border: 2px solid #ffffff;
+  tr {
+    height: 40px;
+  }
+  //  Coral Classes
+  .tsqd-coral-01 {
+    background: $tsqd-coral-01;
+  }
+
+  .tsqd-coral-02 {
+    background: $tsqd-coral-02;
+  }
+
+  .tsqd-coral-03 {
+    background: $tsqd-coral-03;
+  }
+
+  .tsqd-coral-04 {
+    background: $tsqd-coral-04;
+  }
+// TEAL classes
+  .tsqd-teal-01 {
+    background: $tsqd-teal-01;
+  }
+
+  .tsqd-teal-02 {
+    background: $tsqd-teal-02;
+  }
+
+  .tsqd-teal-03 {
+    background: $tsqd-teal-03;
+  }
+
+  .tsqd-teal-04 {
+    background: $tsqd-teal-04;
+  }
+}
+.color-table {
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+  color: rgba(0, 0, 0, 0.75) !important;
+  border: 2px solid #ffffff;
+  tr {
+    height: 40px;
+  }
+
+//  Gray Classes
+  .tsqd-gray-01 {
+    background: $tsqd-gray-01;
+  }
+
+  .tsqd-gray-02 {
+    background: $tsqd-gray-02;
+  }
+
+  .tsqd-gray-03 {
+    background: $tsqd-gray-03;
+  }
+
+  .tsqd-gray-04 {
+    background: $tsqd-gray-04;
+  }
+
+  .tsqd-gray-05 {
+    background: $tsqd-gray-05;
+  }
+
+  .tsqd-gray-06 {
+    background: $tsqd-gray-06;
+  }
+
+  .tsqd-gray-07 {
+    background: $tsqd-gray-07;
+  }
+
+  .tsqd-gray-08 {
+    background: $tsqd-gray-08;
+  }
+
+  .tsqd-gray-09 {
+    background: $tsqd-gray-09;
+  }
+
+  .tsqd-gray-10 {
+    background: $tsqd-gray-10;
+  }
+
+//  Blue Classes
+  .tsqd-blue-01 {
+    background: $tsqd-blue-01;
+  }
+
+  .tsqd-blue-02 {
+    background: $tsqd-blue-02;
+  }
+
+  .tsqd-blue-03 {
+    background: $tsqd-blue-03;
+  }
+
+  .tsqd-blue-04 {
+    background: $tsqd-blue-04;
+  }
+
+  .tsqd-blue-05 {
+    background: $tsqd-blue-05;
+  }
+
+  .tsqd-blue-06 {
+    background: $tsqd-blue-06;
+  }
+
+  .tsqd-blue-07 {
+    background: $tsqd-blue-07;
+  }
+
+  .tsqd-blue-08 {
+    background: $tsqd-blue-08;
+  }
+
+  .tsqd-blue-09 {
+    background: $tsqd-blue-09;
+  }
+
+  .tsqd-blue-10 {
+    background: $tsqd-blue-10;
+  }
+
+//  Green Classes
+  .tsqd-green-01 {
+    background: $tsqd-green-01;
+  }
+
+  .tsqd-green-02 {
+    background: $tsqd-green-02;
+  }
+
+  .tsqd-green-03 {
+    background: $tsqd-green-03;
+  }
+
+  .tsqd-green-04 {
+    background: $tsqd-green-04;
+  }
+
+  .tsqd-green-05 {
+    background: $tsqd-green-05;
+  }
+
+  .tsqd-green-06 {
+    background: $tsqd-green-06;
+  }
+
+  .tsqd-green-07 {
+    background: $tsqd-green-07;
+  }
+
+  .tsqd-green-08 {
+    background: $tsqd-green-08;
+  }
+
+  .tsqd-green-09 {
+    background: $tsqd-green-09;
+  }
+
+  .tsqd-green-10 {
+    background: $tsqd-green-10;
+  }
+
+//  Gold Classes
+  .tsqd-gold-01 {
+    background: $tsqd-gold-01;
+  }
+
+  .tsqd-gold-02 {
+    background: $tsqd-gold-02;
+  }
+
+  .tsqd-gold-03 {
+    background: $tsqd-gold-03;
+  }
+
+  .tsqd-gold-04 {
+    background: $tsqd-gold-04;
+  }
+
+  .tsqd-gold-05 {
+    background: $tsqd-gold-05;
+  }
+
+  .tsqd-gold-06 {
+    background: $tsqd-gold-06;
+  }
+
+  .tsqd-gold-07 {
+    background: $tsqd-gold-07;
+  }
+
+  .tsqd-gold-08 {
+    background: $tsqd-gold-08;
+  }
+
+  .tsqd-gold-09 {
+    background: $tsqd-gold-09;
+  }
+
+  .tsqd-gold-10 {
+    background: $tsqd-gold-10;
+  }
+}
+
+.margin-bottom-2rem{
+  margin-bottom: 2rem !important;
+}
+
+//button, .button, input[type="submit"], input[type="button"]{
+//  width: 100%;
+//}
+
+// setting of icon style guide page
+// this should not effect the main page style
+#icons-style-guide{
+  & h1 {
+    font-size: 1.5em;
+    font-weight: normal;
+  }
+  & small {
+    font-size: .66666667em;
+  }
+  & a {
+    color: #e74c3c;
+    text-decoration: none;
+  }
+  & a:hover, & a:focus {
+    box-shadow: 0 1px #e74c3c;
+  }
+  & .bshadow0, & input {
+    box-shadow: inset 0 -2px #e7e7e7;
+  }
+  & input:hover {
+    box-shadow: inset 0 -2px #ccc;
+  }
+  & input, & fieldset {
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+  & input {
+    color: inherit;
+    line-height: 1.5;
+    height: 1.5em;
+    padding: .25em 0;
+  }
+  & input:focus {
+    outline: none;
+    box-shadow: inset 0 -2px #449fdb;
+  }
+//  & .glyph {
+  //    font-size: 16px;
+  //    width: 15em;
+  //    padding-bottom: 1em;
+  //    margin-right: 4em;
+  //    margin-bottom: 1em;
+  //    float: left;
+  //    overflow: hidden;
+  //  }
+  & .liga {
+    width: 80%;
+    width: calc(100% - 2.5em);
+  }
+  & .talign-right {
+    text-align: right;
+  }
+  & .talign-center {
+    text-align: center;
+  }
+  & .bgc1 {
+    background: #f1f1f1;
+  }
+  & .fgc1 {
+    color: #999;
+  }
+  & .fgc0 {
+    color: #000;
+  }
+  & p {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+  & .mvm {
+    margin-top: .75em;
+    margin-bottom: .75em;
+  }
+  & .mtn {
+    margin-top: 0;
+  }
+  & .mtl, & .mal {
+    margin-top: 1.5em;
+  }
+  & .mbl, & .mal {
+    margin-bottom: 1.5em;
+  }
+  & .mal {
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+  }
+  & .mhmm {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  & .mls {
+    margin-left: .25em;
+  }
+  & .ptl {
+    padding-top: 1.5em;
+  }
+  & .pbs,&  .pvs {
+    padding-bottom: .25em;
+  }
+  & .pvs,& .pts {
+    padding-top: .25em;
+  }
+  & .clearfix {
+    zoom: 1;
+  }
+  & .unit {
+    float: left;
+  }
+  & .unitRight {
+    float: right;
+  }
+  & .size1of2 {
+    width: 50%;
+  }
+  & .size1of1 {
+    width: 100%;
+  }
+  & .clearfix:before, .clearfix:after {
+    content: " ";
+    display: table;
+  }
+  & .clearfix:after {
+    clear: both;
+  }
+  & .hidden-true {
+    display: none;
+  }
+  & .textbox0 {
+    width: 3em;
+    background: #f1f1f1;
+    padding: .25em .5em;
+    line-height: 1.5;
+    height: 1.5em;
+  }
+  & #testDrive {
+    padding-top: 24px;
+    line-height: 1.5;
+  }
+  & .fs0 {
+    font-size: 16px;
+  }
+  & .fs1 {
+    font-size: 32px;
+    margin-bottom: 4rem;
+    height: 4.5rem;
+    & [class^="icon-"], [class*=" icon-"] {
+      font-size: 32px;
+      color: #555;
+    }
+    & .mls{
+      font-size: 1.5rem;
+      color: #555;
+    }
+    &:nth-child(odd){
+      padding: 0 0 0 2.5rem;
+    }
+    &:nth-child(even){
+      padding: 0 2.5rem 0 0;
+    }
+  }
+}
+.style-guide-buttons{
+  button{
+    width: 100%;
+  }
+}
+.image-table{
+  @media #{$small}{
+    tr{
+      td:nth-child(2){
+        width: 47%;
+      }
+    }
+  }
+}
