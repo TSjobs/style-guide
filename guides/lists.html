@@ -3,43 +3,37 @@
 </h2>
 <div class="row margin-bottom-2rem">
   <div class="large-12 column">
-    <% members = [ { name: 'Allison Smith', business: 'Flora and Fauna', address: '1234 17th St', initials: 'AS' }, { name: 'Andrea Pinal', business: 'Stable Cafe', address: '142 Folsom St', initials: 'AP' }, { name: 'Andrew Tower', business: 'Townsquared', address: '3180 17th St', initials: 'AT' } ] %>
-    <% i = 0 %>
-    <% members.each do |member| %>
-      <% odd_even_class = i%2 == 0 ? 'odd' : 'even' %>
-      <% i += 1 %>
-      <div class="large-12 column">
-        <div class="<%= odd_even_class %> list-view">
-          <div class="large-12 column no-padding">
-            <div class="image circle">
-              <div class="initials">
-                <%= member[:initials] %>
+    <div ng-repeat="member in members" class="large-12 column">
+      <div class="list-view" ng-even-class=" 'even' " ng-odd-class=" 'odd' ">
+        <div class="large-12 column no-padding">
+          <div class="image circle">
+            <div class="initials">
+              {{member.initials}}
+            </div>
+          </div>
+          <!--= image_tag 'member-l.jpg', size: '40x40'
+          -->
+          <div class="large-12 medium-12 small-12 column no-padding name-and-description-container">
+            <div class="large-6 medium-6 small-12 column no-padding">
+              <div class="name">
+                {{member.name}}
               </div>
             </div>
-            <!--= image_tag 'member-l.jpg', size: '40x40'
-            -->
-            <div class="large-12 medium-12 small-12 column no-padding name-and-description-container">
-              <div class="large-6 medium-6 small-12 column no-padding">
-                <div class="name">
-                  <%= member[:name] %>
-                </div>
+            <div class="large-6 medium-6 small-12 column no-padding description">
+              <div class="line1">
+                {{member.business}}
               </div>
-              <div class="large-6 medium-6 small-12 column no-padding description">
-                <div class="line1">
-                  <%= member[:business] %>
-                </div>
-                <div class="line2">
-                  <%= member[:address] %>
-                </div>
+              <div class="line2">
+                {{member.address}}
               </div>
             </div>
-            <div class="message">
-              <span class="icon-mail message-icon"></span>
-            </div>
+          </div>
+          <div class="message">
+            <span class="icon-mail message-icon"></span>
           </div>
         </div>
       </div>
-    <% end %>
+    </div>
   </div>
 </div>
 <p>
@@ -54,7 +48,7 @@
           <div class="large-12 column no-padding">
             <div class="list-view odd">
               <div class="image circle">
-                <img src="/assets/co-workers.png"/>
+                <img src="/images/co-workers.png"/>
               </div>
               <div class="name">
                 Allison Smith
@@ -87,7 +81,7 @@
     <div class="large-12 column no-padding">
       <div class="groups-listView odd">
         <div class="image square">
-          <img src="/assets/co-workers.png"/>
+          <img src="/images/co-workers.png"/>
           <div class="members-count">
             <i class="icon icon-users"></i>
             34
@@ -120,39 +114,35 @@
 <div class="large-12 column">
   <pre>
     <code data-language="html">
-      <%= preserve do %>
-        <escaped>
 
-          <div class="groups-listView odd">
-            <div class="image square">
-              <img />{ src:"/assets/co-workers.png"}<div class="members-count">
-                <i class="icon icon-users"></i>
-                34
-              </div>
-              <div class="type">
-                <i class="icon icon-lock"></i>
-              </div>
-            </div>
-            <div class="description">
-              <div class="title">
-                Allison Smith
-              </div>
-              <div class="details">
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled ...
-              </div>
-            </div>
-            <div class="action">
-              <div class="button tiny cta-button">
-                join
-              </div>
-              <a href=>'#' >
-                Ignore</a>
-            </div>
-          </div>
+&lt;div class=&quot;groups-listView odd&quot;&gt;
+  &lt;div class=&quot;image square&quot;&gt;
+    &lt;img src=&quot;/images/co-workers.png&quot; /&gt;
+    &lt;div class=&quot;members-count&quot;&gt;
+      &lt;i class=&quot;icon icon-users&quot;&gt;&lt;/i&gt;
+      34
+    &lt;/div&gt;
+    &lt;div class=&quot;type&quot;&gt;
+      &lt;i class=&quot;icon icon-lock&quot;&gt;&lt;/i&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;description&quot;&gt;
+    &lt;div class=&quot;title&quot;&gt;
+      Allison Smith
+    &lt;/div&gt;
+    &lt;div class=&quot;details&quot;&gt;
+      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled ...
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;action&quot;&gt;
+    &lt;div class=&quot;button tiny cta-button&quot;&gt;
+      join
+    &lt;/div&gt;
+    &lt;a href=&gt;'#' &gt;
+      Ignore&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
 
-
-        </escaped>
-      <% end %>
     </code>
   </pre>
 </div>
@@ -160,7 +150,7 @@
   <div class="large-12 column no-padding">
     <div class="groups-listView even highlight">
       <div class="image square">
-        <img src="/assets/co-workers.png"/>
+        <img src="/images/co-workers.png"/>
         <div class="members-count">
           <i class="icon icon-users"></i>
           34
@@ -197,45 +187,41 @@
   <div class="large-12 column">
     <pre>
       <code data-language="html">
-        <%= preserve do %>
-          <escaped>
 
-            <div class="groups-listView even highlight">
-              <div class="image square">
-                <img />{ src:"/assets/co-workers.png"}<div class="members-count">
-                  <i class="icon icon-users"></i>
-                  34
-                </div>
-                <div class="type">
-                  <i class="icon icon-lock"></i>
-                </div>
-              </div>
-              <div class="description">
-                <div class="title">
-                  Allison Smith
-                </div>
-                <div class="details">
-                  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled ...
-                </div>
-              </div>
-              <div class="action">
-                <div class="button tiny">
-                  + invite
-                </div>
-                <div class="requests">
-                  <div class="count">
-                    2
-                  </div>
-                  <span>
-                    Requests
-                  </span>
-                </div>
-              </div>
-            </div>
+&lt;div class=&quot;groups-listView even highlight&quot;&gt;
+  &lt;div class=&quot;image square&quot;&gt;
+    &lt;img src=&quot;/images/co-workers.png&quot; /&gt;
+    &lt;div class=&quot;members-count&quot;&gt;
+      &lt;i class=&quot;icon icon-users&quot;&gt;&lt;/i&gt;
+      34
+    &lt;/div&gt;
+    &lt;div class=&quot;type&quot;&gt;
+      &lt;i class=&quot;icon icon-lock&quot;&gt;&lt;/i&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;description&quot;&gt;
+    &lt;div class=&quot;title&quot;&gt;
+      Allison Smith
+    &lt;/div&gt;
+    &lt;div class=&quot;details&quot;&gt;
+      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled ...
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;action&quot;&gt;
+    &lt;div class=&quot;button tiny&quot;&gt;
+      + invite
+    &lt;/div&gt;
+    &lt;div class=&quot;requests&quot;&gt;
+      &lt;div class=&quot;count&quot;&gt;
+        2
+      &lt;/div&gt;
+      &lt;span&gt;
+        Requests
+      &lt;/span&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
 
-
-          </escaped>
-        <% end %>
       </code>
     </pre>
   </div>

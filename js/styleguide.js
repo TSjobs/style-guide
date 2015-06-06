@@ -1,5 +1,22 @@
 angular.module('styleguide', ['ui.router'])
 .run(function($rootScope){
+
+  $rootScope.guides = [
+    'buttons',
+    'colors',
+    'mobile',
+    'modals',
+    'navigation',
+    'tags',
+    'tabs',
+    'typography',
+    'panels',
+    'lists',
+    'forms',
+    'icons',
+    'images'
+  ]
+
   $rootScope.main_colors = [
     'tsqd-blue',
     'tsqd-green',
@@ -141,10 +158,6 @@ angular.module('styleguide', ['ui.router'])
     'failure',
   ]
 
-  $rootScope.guides = [
-    'overview','layouts','buttons',
-    'mobile','modals','navigation',
-    'tags','tabs','typography','panels',
-    'lists','forms','icons','images','colors'
-  ]
+  $rootScope.members = [ { name: 'Allison Smith', business: 'Flora and Fauna', address: '1234 17th St', initials: 'AS' }, { name: 'Andrea Pinal', business: 'Stable Cafe', address: '142 Folsom St', initials: 'AP' }, { name: 'Andrew Tower', business: 'Townsquared', address: '3180 17th St', initials: 'AT' } ];
+
 });

@@ -1,14 +1,14 @@
 <h2>
   Tabs
 </h2>
-<div class="large-12 column" ng-init="currentTab = "tab1"">
+<div class="large-12 column" ng-init="currentTab = 'tab1'">
   <ul class="tabs blue three">
-    <li class="tab-title" ng-class="{ 'active' : currentTab == 'tab1'  %>" ng-click="currentTab = "tab1"">
+    <li class="tab-title" ng-class="{ 'active' : currentTab == 'tab1'  }" ng-click="currentTab = 'tab1'">
       <a>
         Tab 1
       </a>
     </li>
-    <li class="tab-title" ng-class="{ 'active' : currentTab == 'tab2'  %>" ng-click="currentTab = "tab2"">
+    <li class="tab-title" ng-class="{ 'active' : currentTab == 'tab2' }" ng-click="currentTab = 'tab2'">
       <a>
         Tab 2
         <span>
@@ -16,7 +16,7 @@
         </span>
       </a>
     </li>
-    <li class="tab-title" ng-class="{ 'active' : currentTab == 'tab3'  %>" ng-click="currentTab = "tab3"">
+    <li class="tab-title" ng-class="{ 'active' : currentTab == 'tab3'  }" ng-click="currentTab = 'tab3'">
       <a>
         Tab 3
       </a>
@@ -27,33 +27,28 @@
 <div class="large-12 column">
   <pre>
     <code data-language="html">
-      <%= preserve do %>
-        <escaped>
 
-          <ul class="tabs blue three">
-            <li class="tab-title" ng-class="{ 'active' : currentTab == 'tab1'  %>" ng-click="currentTab = "tab1"">
-              <a>
-                Tab 1
-              </a>
-            </li>
-            <li class="tab-title" ng-class="{ 'active' : currentTab == 'tab2'  %>" ng-click="currentTab = "tab2"">
-              <a>
-                Tab 2
-                <span>
-                  3
-                </span>
-              </a>
-            </li>
-            <li class="tab-title" ng-class="{ 'active' : currentTab == 'tab3'  %>" ng-click="currentTab = "tab3"">
-              <a>
-                Tab 3
-              </a>
-            </li>
-          </ul>
+&lt;ul class=&quot;tabs blue three&quot;&gt;
+  &lt;li class=&quot;tab-title&quot; ng-class=&quot;{ 'active' : currentTab == 'tab1'  }&quot; ng-click=&quot;currentTab = 'tab1'&quot;&gt;
+    &lt;a&gt;
+      Tab 1
+    &lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;tab-title&quot; ng-class=&quot;{ 'active' : currentTab == 'tab2'  }&quot; ng-click=&quot;currentTab = 'tab2'&quot;&gt;
+    &lt;a&gt;
+      Tab 2
+      &lt;span&gt;
+        3
+      &lt;/span&gt;
+    &lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;tab-title&quot; ng-class=&quot;{ 'active' : currentTab == 'tab3'  }&quot; ng-click=&quot;currentTab = 'tab3'&quot;&gt;
+    &lt;a&gt;
+      Tab 3
+    &lt;/a&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 
-
-        </escaped>
-      <% end %>
     </code>
   </pre>
 </div>

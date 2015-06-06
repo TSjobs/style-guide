@@ -52,41 +52,36 @@
 <div class="large-12 column no-padding hide-for-small-only">
   <pre>
     <code data-language="html">
-      <%= preserve do %>
-        <escaped>
 
-          <div class="large-12 column form-group">
-            <div class="large-8 column no-padding">
-              <div class="large-12 column no-padding">
-                <div class="large-6 column no-padding">
-                  <label for="first-name">
-                    First name
-                  </label>
-                  <input class="adjacent-right" id="first-name" placeholder="John" type="text">
-                </div>
-                <div class="large-6 column no-padding">
-                  <label for="last-name">
-                    Last name
-                  </label>
-                  <input class="adjacent-left" id="last-name" placeholder="Smith" type="text">
-                </div>
-              </div>
-              <div class="large-12 column no-padding">
-                <label for="email">
-                  Email
-                </label>
-                <input class="with-meta" id="email" placeholder="name@example.com" type="text">
-                <span class="meta-description">
-                  We will send your invite to this address
-                </span>
-              </div>
-            </div>
-            <div class="large-4 column"></div>
-          </div>
+&lt;div class=&quot;large-12 column form-group&quot;&gt;
+  &lt;div class=&quot;large-8 column no-padding&quot;&gt;
+    &lt;div class=&quot;large-12 column no-padding&quot;&gt;
+      &lt;div class=&quot;large-6 column no-padding&quot;&gt;
+        &lt;label for=&quot;first-name&quot;&gt;
+          First name
+        &lt;/label&gt;
+        &lt;input class=&quot;adjacent-right&quot; id=&quot;first-name&quot; placeholder=&quot;John&quot; type=&quot;text&quot;&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;large-6 column no-padding&quot;&gt;
+        &lt;label for=&quot;last-name&quot;&gt;
+          Last name
+        &lt;/label&gt;
+        &lt;input class=&quot;adjacent-left&quot; id=&quot;last-name&quot; placeholder=&quot;Smith&quot; type=&quot;text&quot;&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;large-12 column no-padding&quot;&gt;
+      &lt;label for=&quot;email&quot;&gt;
+        Email
+      &lt;/label&gt;
+      &lt;input class=&quot;with-meta&quot; id=&quot;email&quot; placeholder=&quot;name@example.com&quot; type=&quot;text&quot;&gt;
+      &lt;span class=&quot;meta-description&quot;&gt;
+        We will send your invite to this address
+      &lt;/span&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;large-4 column&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
 
-
-        </escaped>
-      <% end %>
     </code>
   </pre>
 </div>
@@ -477,28 +472,6 @@
 <div class="large-12 column no-padding hide-for-small-only">
   <pre>
     <code data-language="ruby">
-      <%= preserve do %>
-        <escaped>
-
-          -# normal checkbox
-          .checkbox-wrap
-            .checkbox
-              %input#checkbox-option-1{ :type => 'checkbox' }
-              %label{ :type => 'checkbox', :for => 'checkbox-option-1' }
-          %label.checkbox-main-label{ :for => 'checkbox-option-1' }
-            Check this
-
-          -# for green checkbox
-          .checkbox-wrap
-            .checkbox.green
-              %input#checkbox-option-green-checked { :type => 'checkbox','checked'=>'checked' }
-              %label { :type => 'checkbox', :for => 'checkbox-option-green-checked' }
-          %label.checkbox-main-label { :for => 'checkbox-option-green-checked' }
-            green check box checked
-
-
-        </escaped>
-      <% end %>
     </code>
   </pre>
 </div>
@@ -511,14 +484,14 @@
     <label>
       Role
     </label>
-    <ul class="segment-control three" ng-init="currentSegment = "segment1"">
-      <li ng-class="{ 'active' : currentSegment == 'segment1'  %>" ng-click="currentSegment = "segment1"">
+    <ul class="segment-control three" ng-init="currentSegment = 'segment1'">
+      <li ng-class="{ 'active' : currentSegment == 'segment1'  }" ng-click="currentSegment = 'segment1'">
         Owner
       </li>
-      <li ng-class="{ 'active' : currentSegment == 'segment2'  %>" ng-click="currentSegment = "segment2"">
+      <li ng-class="{ 'active' : currentSegment == 'segment2'  }" ng-click="currentSegment = 'segment2'">
         Manager
       </li>
-      <li ng-class="{ 'active' : currentSegment == 'segment3'  %>" ng-click="currentSegment = "segment3"">
+      <li ng-class="{ 'active' : currentSegment == 'segment3'  }" ng-click="currentSegment = 'segment3'">
         Employee
       </li>
     </ul>

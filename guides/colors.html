@@ -1,0 +1,58 @@
+<h2>
+  Colors
+</h2>
+<p>
+  These colors are saved as scss variables.  Use these when possible.
+</p>
+<hr/>
+
+<ng-include ng-repeat="color in main_colors" src="'guides/_color_swatch.html'"></ng-include>
+
+<hr class="invisible"/>
+
+<ng-include ng-repeat="color in secondary_colors" src="'guides/_color_swatch.html'"></ng-include>
+
+<hr class="invisible"/>
+<table class="color-table large-12 column">
+  <tbody>
+    <tr ng-repeat="row in color_table">
+      <td class="text-center {{column}}" ng-class="{ 'color-check': -1<column.indexOf(tsqd)}" ng-repeat="column in row" style="color: #000000 !important">
+        {{column}}
+      </td>
+    </tr>
+  </tbody>
+</table>
+<hr class="invisible"/>
+<h3>On boarding colors</h3>
+<table class="color-on-boarding-table large-12 column">
+  <tbody>
+    <tr ng-repeat="row in onboarding_colors">
+      <td class="text-center color-check {{column}}" ng-class="{ 'color-check': -1<column.indexOf(tsqd)}" ng-repeat="column in row" style="color: #000000 !important">
+        {{column}}
+      </td>
+    </tr>
+  </tbody>
+</table>
+<hr class="invisible"/>
+<h3>Success and failure</h3>
+
+<ng-include ng-repeat="color in success_failure_colors" src="'guides/_color_swatch.html'"></ng-include>
+
+<script>
+
+  $(document).ready(function(){
+    $('.color-check').each(function(){
+      $this = $(this);
+      rgb = $this.css('background-color');
+      rgb = rgb.match(/^rgba?[\s+]?\([\s+]?(\d+)[\s+]?,[\s+]?(\d+)[\s+]?,[\s+]?(\d+)[\s+]?/i);
+      if(rgb && rgb.length === 4) {
+        bg = "#" + ("0" + parseInt(rgb[1],10).toString(16)).slice(-2) + ("0" + parseInt(rgb[2],10).toString(16)).slice(-2) + ("0" + parseInt(rgb[3],10).toString(16)).slice(-2);
+      }
+      if(rgb){
+        $this.html($this.html() + '<br>' + bg);
+      }
+    });
+  });
+
+
+</script>
